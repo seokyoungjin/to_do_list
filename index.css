@@ -23,12 +23,12 @@ h1 {
 }
 #inputField #todoList{
     width: calc(100%-45px);
-    border: 1pxp solid #eee;
+    border: 1px solid #eee;
     border-radius: 4px;
     padding: 10px;
 }
 
-#inputField #addBtn {
+#inputField #addBtn:focus {
     outline: none;
 }
 #inputField #addBtn {
@@ -51,4 +51,7 @@ h1 {
     top: 50%;
     left: 50%;
     
+}
+#inputField #addBtn span:last-child {
+    transform: translate(-50%, -50%) rotate(-90deg);
 }
