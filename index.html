@@ -7,14 +7,14 @@
     <title>to_do_list</title>
     <link rel="stylesheet" href="./index.css">
     <!-- <script defer src="./index.js"></script> -->
-    <script  src="./index.js"></script>
+    <script src="./index.js" defer></script>
 </head>
 
 <body>
     <div class="todo-container">
         <h1>Todo</h1>
         <div id="inputField">
-            <input type="text" id="todoInput" placeholder="할 일 추가하기" onkeydown="keyCodeCheak()">
+            <input type="text" id="todoInput" placeholder="할 일 추가하기" onkeydown="keyCodeCheck()">
             
             <button type="button" id="addBtn">
                 <span></span>
@@ -25,6 +25,9 @@
         <ul id="todoList">
 
         </ul>
+        <div class="delete-btn-wrap">
+            <button onclick="deleteAll()">전체 삭제</button>
+        </div>
     </div>
 </body>
 
